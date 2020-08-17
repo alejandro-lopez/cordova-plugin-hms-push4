@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-hms-push",
-  "version": "4.0.3.300",
+  "version": "1.0.0",
   "packagename": "cordova-push",
   "description": "cordova-plugin-hms-push",
   "cordova": {
