@@ -21,17 +21,17 @@
         <hook type="after_plugin_install" src="hooks/after_plugin_install.js" />
 	<hook type="before_plugin_uninstall" src="hooks/before_plugin_uninstall.js" />
         <hook type="after_prepare" src="hooks/after_prepare.js" />
-	<config-file target="res/xml/config.xml" parent="/*">
+	<config-file target="config.xml" parent="/*">
             <feature name="HMSPush">
                 <param name="android-package" value="com.huawei.cordova.hms.push.HMSPush" />
             </feature>
         </config-file>
-	<config-file target="AndroidManifest.xml" parent="/manifest">
+	<config-file target="AndroidManifest.xml" parent="/*">
 		<uses-permission android:name="android.permission.INTERNET" />
 		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 		<uses-permission android:name="android.permission.WAKE_LOCK" />
 	</config-file>
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">	
+        <config-file target="AndroidManifest.xml" parent="application">	
             <service android:name="com.huawei.cordova.hms.push.CordovaHmsMessageService" android:exported="true">
                 <intent-filter>
                     <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
