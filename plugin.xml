@@ -40,8 +40,8 @@
         </config-file>
 
       <framework src="com.huawei.hms:push:4.0.2.300" />
-      <framework src="androidx.appcompat:appcompat:1.0.2" />
-      <framework src="resources/plugin.gradle" custom="true" type="gradleReference"/>        
+	<!--<framework src="androidx.appcompat:appcompat:1.0.2" />
+      <framework src="resources/plugin.gradle" custom="true" type="gradleReference"/>-->         
 
         <source-file src="src/main/java/com/huawei/cordova/hms/push/HMSPush.java" target-dir="src/com/huawei/cordova/hms/push" />
         <source-file src="src/main/java/com/huawei/cordova/hms/push/Constants.java" target-dir="src/com/huawei/cordova/hms/push" />
